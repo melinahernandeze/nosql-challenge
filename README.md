@@ -90,12 +90,5 @@ Convert latitude and longitude fields from strings to decimal numbers.
 
 Convert RatingValue to integer numbers.
 
-python
-Copy code
-establishments.update_many({}, [{"$set": {"geocode.longitude": {"$toDouble": "$geocode.longitude"}, "geocode.latitude": {"$toDouble": "$geocode.latitude"}}}])
-establishments.update_many({}, [{"$set": {"RatingValue": {"$toInt": "$RatingValue"}}}])
 Requirements
-Refer to the requirements section in the original prompt for detailed instructions on meeting the criteria.
-
-
-This README provides an overview of setting up the database, updating the database, and meeting th
+This README provides an overview of setting up the database
